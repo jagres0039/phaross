@@ -35,7 +35,7 @@ const logger = {
 const networkConfig = {
   name: 'Pharos Testnet',
   chainId: 688688,
-  rpcUrl: 'https://testnet.dplabs-internal.com',
+  rpcUrl: 'https://api.zan.top/node/v1/pharos/testnet/dcd9cb0721f44d869b8de4e0f7fa3bc9',
   currencySymbol: 'PHRS',
 };
 
