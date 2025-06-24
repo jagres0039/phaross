@@ -40,14 +40,16 @@ const networkConfig = {
 };
 
 const tokens = {
-  USDC: '0xad902cf99c2de2f1ba5ec4d642fd7e49cae9ee37',
+  USDC: '0x72df0bcd7276f2dfbac900d1ce63c272c4bccced',
   WPHRS: '0x76aaada469d23216be5f7c596fa25f282ff9b364',
-  USDT: '0xed59de2d7ad9c043442e381231ee3646fc3c2939',
+  USDT: '0xd4071393f8716661958f766df660033b3d35fd29',
+  PHRS: '0x76aaada469d23216be5f7c596fa25f282ff9b364',
 };
 
 const contractAddress = '0x1a4de519154ae51200b0ad7c90f7fac75547888a';
 
 const tokenDecimals = {
+  PHRS : 18,
   WPHRS: 18,
   USDC: 6,
   USDT: 6,
@@ -76,12 +78,12 @@ const erc20Abi = [
 ];
 
 const pairOptions = [
-  { id: 1, from: 'WPHRS', to: 'USDC', amount: 0.01 },
-  { id: 2, from: 'WPHRS', to: 'USDT', amount: 0.01 },
-  { id: 3, from: 'USDC', to: 'WPHRS', amount: 0.01 },
-  { id: 4, from: 'USDT', to: 'WPHRS', amount: 0.01 },
-  { id: 5, from: 'USDC', to: 'USDT', amount: 0.01 },
-  { id: 6, from: 'USDT', to: 'USDC', amount: 0.01 },
+  { id: 1, from: 'PHRS', to: 'WPHRS', amount: 0.01 },
+  { id: 2, from: 'WPHRS', to: 'PHRS', amount: 0.01 },
+  { id: 3, from: 'USDC', to: 'PHRS', amount: 5 },
+  { id: 4, from: 'USDT', to: 'PHRS', amount: 5 },
+  { id: 5, from: 'PHRS', to: 'USDC', amount: 0.009 },
+  { id: 6, from: 'PHRS', to: 'USDT', amount: 0.017 }
 ];
 
 const loadProxies = () => {
